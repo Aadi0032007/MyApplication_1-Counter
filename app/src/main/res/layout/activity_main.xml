@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    android:foregroundTint="#00BCD4"
+    android:longClickable="false"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="158dp"
+        android:layout_height="68dp"
+        android:autoText="false"
+        android:background="#FFE502"
+        android:textAlignment="center"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <Button
+        android:id="@+id/y"
+        android:layout_width="135dp"
+        android:layout_height="66dp"
+        android:background="#F60707"
+        android:onClick="addNum"
+        android:text="Count-UP"
+        android:textAlignment="gravity"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/x"
+        app:layout_constraintVertical_bias="0.404" />
+
+    <Button
+        android:id="@+id/z"
+        android:layout_width="148dp"
+        android:layout_height="75dp"
+        android:backgroundTint="#E91E63"
+        android:longClickable="true"
+        android:onClick="subsNum"
+        android:text="Count-DOWN"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/y"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/y"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.81" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="199dp"
+        android:layout_height="72dp"
+        android:background="#459BDF"
+        android:backgroundTint="#000994D3"
+        android:text="COUNTER"
+        android:textColor="#050303"
+        android:textSize="36sp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.096" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="63dp"
+        android:layout_height="57dp"
+        android:clickable="true"
+        android:onClick="clr"
+        app:backgroundTint="#673AB7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/z"
+        app:layout_constraintVertical_bias="0.477"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
