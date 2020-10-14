@@ -29,6 +29,7 @@
         android:layout_width="135dp"
         android:layout_height="66dp"
         android:background="#F60707"
+        android:hapticFeedbackEnabled="false"
         android:onClick="addNum"
         android:text="Count-UP"
         android:textAlignment="gravity"
